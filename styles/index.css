@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+
+body{
+    font-family: "Figtree";
+    background-color: var(--Yellow);
+    font-size: 16px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--White);
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    border: 1px solid var(--Black);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 8px 8px 1px 1px black;
+}
+
+.illustration{
+    border-radius: 8px;
+}
+
+.learning{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 32px;
+    background-color: var(--Yellow);
+    color: var(--Black);
+    font-weight: 900;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.published{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.para{
+    margin-top: 10px;
+    color: var(--Grey);
+    line-height: 1.5;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.profile-pic{
+    height: 32px;
+    width: auto;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--Black);
+}
+
+@media screen and (max-width:375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-container{
+        width: 330px;
+    }
+        
+    .attribution{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+}
