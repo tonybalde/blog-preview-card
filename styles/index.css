@@ -16,6 +16,7 @@ body{
     font-family: "Figtree";
     background-color: var(--Yellow);
     font-size: 16px;
+    margin-bottom: 100px;
 }
 
 .main-container{
